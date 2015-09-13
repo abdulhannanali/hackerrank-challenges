@@ -42,16 +42,24 @@ public class ceasarcipher{
 
 		char[] alphabetsArray = S.toCharArray();
 
-		for (int i = 0; i < alphabetsArray; i++){
-			// Char.isAlphabetic is a static method
-			if (Char.isAlphabetic(alphabetsArray[i])){
+		for (int i = 0; i < alphabetsArray.length; i++){
 
+			if (alphabetsArray[i] >= 'a' && alphabetsArray[i] <= 'z'){
+				alphabetsArray[i] = (char) ((alphabetsArray[i] + K) % 122);
+			}
+			else if (alphabetsArray[i] >= 'A' && alphabetsArray[i] <= 'Z') {
+				alphabetsArray[i] = (char) ((alphabetsArray[i] + K) % 90);
 			}
 		}
+
+		// converting the charArray to String and printing it 
+		System.out.println(new String(alphabetsArray));
+		
+		// After 
 
 		// Solved The Problem
 
 		// Closing the Scanner at the end of the program
-		scanner.close();
+		sn.close();
 	}
 }
