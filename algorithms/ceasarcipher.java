@@ -45,10 +45,10 @@ public class ceasarcipher{
 		for (int i = 0; i < alphabetsArray.length; i++){
 
 			if (alphabetsArray[i] >= 'a' && alphabetsArray[i] <= 'z'){
-				alphabetsArray[i] = (char) ((alphabetsArray[i] + K) % 122);
+				alphabetsArray[i] = (char) (((alphabetsArray[i] - 'a' + K) % 26) + 'a');
 			}
 			else if (alphabetsArray[i] >= 'A' && alphabetsArray[i] <= 'Z') {
-				alphabetsArray[i] = (char) ((alphabetsArray[i] + K) % 90);
+				alphabetsArray[i] = (char) (((alphabetsArray[i] -  'A' +  K) % 26) + 'A');
 			}
 		}
 

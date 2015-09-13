@@ -6,9 +6,11 @@ pseudocode for the problem
 converting the string to character
 
 determining whether the given char is an alphabet (isAlphabet()) method might be helpful
+(use just simple character comparison in real instead of this method	))
 
 if it's lowerCase or upperCase 
 if upperCase subtractive charValue() of 'A' other wise subtracting the charValue of 'a'.
+
 
 using the formula to calculate the position of the character in the newSTring
 (position of the current character + K) % 25 where lengthOfAlphabets starting from 0 will be 25. 
