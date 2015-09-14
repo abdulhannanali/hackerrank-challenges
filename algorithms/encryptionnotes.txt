@@ -1,0 +1,14 @@
+the rows and coloumns of the text given are 
+
+[code java]
+
+floor(sqrt(L)) <= rows <= ceil(sqrt(L))
+
+[/code java]
+
+Get the input from the computer and it's one line
+
+get the number of rows and columns required by the formula given above
+
+start storing the strings
+after storing the strings read it column by column. and print it out and print a single space after every one column to get the output. 
