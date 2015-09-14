@@ -1,0 +1,19 @@
+using integer two dimensional array will be probably a good choice to solving this problem. 
+
+
+// two dimensional integer array with n x n cells so it will be
+int[][] intArray = new int[i][j]; where i = n and j = n 
+
+fill them with numbers
+
+
+for the sake of our example cavities will be denoted as Integer.MIN_VALUE after their detection
+first checking cavities.
+
+if any of their index is j - 1 i - 1 or 0 they are not cavities
+
+printing the integer array and printing the X in place of the cavities if any.
+
+Integer.MIN_VALUE
+
+let's get coding
